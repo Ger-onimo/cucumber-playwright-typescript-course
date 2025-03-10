@@ -2,6 +2,9 @@ UDEMY COURSE: Playwright withh Cucumber BDD and Typescript
 This repo starts at section 4 (project setup for code along learning)
 https://www.udemy.com/course/playwright-with-cucumber-bdd-typescript-beginner-to-pro/learn/lecture/45251107#overview
 
+If cloned forked, the node_modules file may be missing as the repo is public. If this is the case do an npm install command:
+> npm install
+
 ------------------------------------------------------
 To execute the feature file, the long way:
 npx cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts
