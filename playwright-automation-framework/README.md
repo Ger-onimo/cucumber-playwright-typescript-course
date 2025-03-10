@@ -1,5 +1,5 @@
 UDEMY COURSE: Playwright withh Cucumber BDD and Typescript
-This repo starts at section 4 (project setup for cod along learning)
+This repo starts at section 4 (project setup for code along learning)
 https://www.udemy.com/course/playwright-with-cucumber-bdd-typescript-beginner-to-pro/learn/lecture/45251107#overview
 
 ------------------------------------------------------
