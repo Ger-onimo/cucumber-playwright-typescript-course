@@ -82,7 +82,7 @@ When('I enter a random email address', async () => {
     await pageFixture.page.getByPlaceholder('Email Address').fill(randomEmail);
 });
 
-//  Scenarios Outlines - lesson 47
+//  Scenarios Outlines - lesson 47 - inputs
 When('I type a first name {word} and a last name {word}', async (firstName: string, lastName: string) => {
     await pageFixture.page.getByPlaceholder('First Name').fill(firstName);
     await pageFixture.page.getByPlaceholder('Last Name').fill(lastName);
@@ -90,10 +90,10 @@ When('I type a first name {word} and a last name {word}', async (firstName: stri
 
 When('I type an email address {string} and a comment {string}', async (email: string, comment: string)=> {
     await pageFixture.page.getByPlaceholder('Email Address').fill(email);
-    await pageFixture.page.getByPlaceholder('Comments').fill(comment);
+    await pageFixture.page.getByPlaceholder('Comments').fill(comment); 
 });
 
-//  Scenarios Outlines - lesson 48
+//  Scenarios Outlines - lesson 48 - message response validation
 Then('I should be presented with header text {string}', async (message: string) => {
     // Using the element selector for both the successful and unsuccessful messages
     //h1 | //body - this finds h1 or body
@@ -108,6 +108,7 @@ Then('I should be presented with header text {string}', async (message: string) 
         // if statement to check for the expected text for each iteration
         if (text.includes(message)) {
             foundElementText = text;
+            break;
         }
     }
     expect(foundElementText).toContain(message);

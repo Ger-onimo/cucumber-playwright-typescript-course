@@ -14,6 +14,7 @@ Feature: WebdriverUniversity.com - Contact Us Page
         Then I should be presented with a successful contact us submission message
 
     # Scenario same as above with email removed
+    
     Scenario: Invalid Contact Us Form Submission - missing email
         And I type a first name
         And I type a last name
@@ -21,7 +22,7 @@ Feature: WebdriverUniversity.com - Contact Us Page
         And I click on the submit button
         Then I should be presented with an unsuccessful contact us message
 
-    # Lesson 40
+    # Lesson 40 - fixed data
     Scenario: Valid Contact Us Form Submission - Using Specific Data
         And I type a specific first name "Sarah"
         And I type a specific last name "Woods"
@@ -30,6 +31,7 @@ Feature: WebdriverUniversity.com - Contact Us Page
         And I click on the submit button
         Then I should be presented with a successful contact us submission message
 
+    # Lesson 43 > 45 - create random user details
     Scenario: Valid Contact Us Form Submission - Using Random Data
         And I type a random first name
         And I type a random last name
@@ -38,6 +40,7 @@ Feature: WebdriverUniversity.com - Contact Us Page
         And I click on the submit button
         Then I should be presented with a successful contact us submission message
 
+    # Lesson 46 > 48 - parameters to reduce code for DNR
     Scenario Outline: Validate Contact Us Page
         And I type a first name <firstName> and a last name <lastName>
         And I type an email address '<emailAddress>' and a comment '<comment>'
