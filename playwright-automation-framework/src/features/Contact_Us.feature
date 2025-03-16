@@ -53,6 +53,6 @@ Feature: WebdriverUniversity.com - Contact Us Page
 
         Examples:
             | firstName | lastName | emailAddress         | comment                 | message                     |
-            | John      | Jones    | j_jones@example.com  | Hello World?            | Thank You for your Message!555 |
+            | John      | Jones    | j_jones@example.com  | Hello World?            | Thank You for your Message! |
             | Mia       | Carter   | m_carter@example.com | Hi there!               | Thank You for your Message! |
             | Grace     | Hudson   | grace_hudson         | Do you create websites? | Invalid email address       |
