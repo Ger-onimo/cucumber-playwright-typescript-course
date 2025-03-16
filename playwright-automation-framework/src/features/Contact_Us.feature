@@ -1,3 +1,6 @@
+# @regression runs all tests under the regression tags wherever they occur - npm run cucumber regression
+# @contact-us only runs the contact-us tag in this case just this feature file - npm run cucumber contactUs
+@regression @contact-us
 Feature: WebdriverUniversity.com - Contact Us Page
 # use Background to reduce repetition - these can only be used BEFORE a scenario
     Background: Pre conditions
@@ -14,7 +17,6 @@ Feature: WebdriverUniversity.com - Contact Us Page
         Then I should be presented with a successful contact us submission message
 
     # Scenario same as above with email removed
-    
     Scenario: Invalid Contact Us Form Submission - missing email
         And I type a first name
         And I type a last name
@@ -41,6 +43,8 @@ Feature: WebdriverUniversity.com - Contact Us Page
         Then I should be presented with a successful contact us submission message
 
     # Lesson 46 > 48 - parameters to reduce code for DNR
+    # @smoke will only run the smoke tags wherever they occur - npm run cucumber smoke
+    @smoke 
     Scenario Outline: Validate Contact Us Page
         And I type a first name <firstName> and a last name <lastName>
         And I type an email address '<emailAddress>' and a comment '<comment>'

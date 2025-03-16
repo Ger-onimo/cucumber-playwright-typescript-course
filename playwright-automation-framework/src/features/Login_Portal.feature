@@ -1,3 +1,4 @@
+@regression @login
 Feature: WebdriverUniversity.com - Login Portal
     # use Background to reduce repetition - these can only be used BEFORE a scenario
     # Background: Pre conditions
@@ -19,3 +20,9 @@ Feature: WebdriverUniversity.com - Login Portal
             | username  | password     | expectedAlertText    |
             | webdriver | webdriver123 | validation succeeded |
             | webdriver | webdriver321 | validation failed    |
+        @smoke
+        # @ignore will ignore this specific test scenario
+        @ignore 
+        Examples:
+            | username  | password     | expectedAlertText    |
+            | webdriver | webdriver123 | validation succeeded |
