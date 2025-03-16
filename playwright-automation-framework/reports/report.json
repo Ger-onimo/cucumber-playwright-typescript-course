@@ -1,0 +1,224 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "webdriveruniversity.com---login-portal;login-portal-valid-&-invalid-validations",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Login Portal Valid & Invalid Validations",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 705100167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I navigate to the webdriveruniversity login portal",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 540786166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I type a username webdriver",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20694042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I type a password webdriver123",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6428333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click on the login button",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158412749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should be presented with an alert box with validation text 'validation succeeded'",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1533957
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 117640292
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "webdriveruniversity.com---login-portal;login-portal-valid-&-invalid-validations",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Login Portal Valid & Invalid Validations",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 603966457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I navigate to the webdriveruniversity login portal",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 537547499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I type a username webdriver",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16129041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I type a password webdriver321",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4206415
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click on the login button",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148841707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should be presented with an alert box with validation text 'validation failed'",
+            "match": {
+              "location": "src/step-definitions/LoginPortal_Steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 564959
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 102515333
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "webdriveruniversity.com---login-portal",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "WebdriverUniversity.com - Login Portal",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      },
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "src/features/Login_Portal.feature"
+  }
+]
