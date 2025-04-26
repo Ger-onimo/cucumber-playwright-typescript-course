@@ -6,7 +6,7 @@ let alertText: string;
 
 // Got directly to the login page rather than bouncing to the Homepage steps
 Given('I navigate to the webdriveruniversity login portal', async () => {
-    await pageFixture.page.goto('https://webdriveruniversity.com/Login-Portal/index.html?');
+    await pageFixture.page.goto('https://webdriveruniversity.com/Login-Portal/index.html');
 });
 
 When('I type a username {word}', async (username: string) => {
