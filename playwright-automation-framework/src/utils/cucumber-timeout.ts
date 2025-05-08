@@ -5,3 +5,5 @@ import { setDefaultTimeout } from "@cucumber/cucumber";
 // ensure the promise resolves within 20000 milliseconds'
 
 setDefaultTimeout(60000); // 60 seconds
+
+// This timeout MUST be GREATER than other timeouts

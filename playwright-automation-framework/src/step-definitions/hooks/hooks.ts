@@ -1,6 +1,7 @@
 import { After, AfterAll, Before, BeforeAll, Status } from "@cucumber/cucumber";
 import { Browser, chromium, firefox, webkit, BrowserType } from "@playwright/test";
 import { pageFixture } from "./browserContextFixture";
+import { setGlobalSettings } from "../../utils/playwright-timeouts";
 
 // Load env variables from .env file:
 import { config as loadEnv } from "dotenv"
@@ -35,13 +36,14 @@ async function initializeBrowserContext(selectedBrowser: string): Promise<Browse
 
 async function initializePage(): Promise<void> {
     if (!browserInstance) { // if null is true, throw an error...
-        throw new Error('Browser instance is null')
+        throw new Error('Browser instance is null');
     }
     pageFixture.context = await browserInstance.newContext({ // if null not triggered use the Browser instance being declared
         ignoreHTTPSErrors: true
     });
     pageFixture.page = await pageFixture.context.newPage(); // pageFixture is in the browserContextFixture file
-    await pageFixture.page.setViewportSize({width: config.width, height: config.height})
+    setGlobalSettings(pageFixture.page);
+    await pageFixture.page.setViewportSize({ width: config.width, height: config.height });
 }
 
 //BeforeAll hook: Runs once before all scenarios

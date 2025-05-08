@@ -34,7 +34,6 @@ Feature: WebdriverUniversity.com - Contact Us Page
         Then I should be presented with a successful contact us submission message
 
     # Lesson 43 > 45 - create random user details
-    
     Scenario: Valid Contact Us Form Submission - Using Random Data
         And I type a random first name
         And I type a random last name
