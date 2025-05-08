@@ -1,11 +1,19 @@
 import { Given, When } from "@cucumber/cucumber";
 import { pageFixture } from "./hooks/browserContextFixture";
+import logger from '../logger/logger';
 
 const url = "https://www.webdriveruniversity.com/";
 
 Given('I navigate to the webdriveruniversity homepage', async () => {
+    // Use a try block to check for errors
+    try { 
     //Access URL
     await pageFixture.page.goto(url);
+        logger.info('Accessing URL: ' + url) // configured in the logger and .env files
+        // throw new Error('Simulating an error during navigation');
+    } catch (error: any) {
+        logger.error('An error has occurred: ' + error.message); // prints the error message configed in the logger file
+    }
 });
 
 When('I click on the contact us button', async () => {
